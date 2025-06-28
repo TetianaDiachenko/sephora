@@ -22,6 +22,7 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 table {
@@ -38,7 +39,6 @@ button {
   border: none;
   padding: 0;
   font: inherit;
-  cursor: pointer;
 }
 
 input, select, textarea, button {
@@ -55,6 +55,10 @@ input[type='checkbox'], input[type='radio'] {
 
 input, textarea {
   outline: none;
+}
+
+a, input, button {
+	cursor: pointer;
 }
 
 img {
