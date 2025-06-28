@@ -1,0 +1,32 @@
+@use './../../../../scss/variables.scss' as *;
+
+.menuItem {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 16px;
+	user-select: none;
+
+	&:hover {
+		color: #8d8d8d;
+		.icon {
+			color: #8d8d8d;
+		}
+	}	
+}
+
+.icon {
+	display: block;
+	flex-shrink: 0;
+	color: #000;
+}
+
+.text {
+	font-size: 14px;
+	line-height: 0.9;
+}
+
+.subtext {
+	font-size: 10px;
+	font-weight: $font-light;
+}
