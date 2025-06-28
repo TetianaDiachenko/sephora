@@ -17,6 +17,10 @@
 	  border-color: #8d8d8d;
 	}
 
+	@media (min-width: $container-width) {
+		min-width: 260px;
+	}
+
  }
  
  .input {
