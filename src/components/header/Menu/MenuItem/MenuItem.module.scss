@@ -8,11 +8,12 @@
 	user-select: none;
 
 	&:hover {
-		color: #8d8d8d;
+		color: $hover-color;
+
 		.icon {
-			color: #8d8d8d;
+			color: $hover-color;
 		}
-	}	
+	}
 }
 
 .icon {
