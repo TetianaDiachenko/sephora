@@ -1,0 +1,5 @@
+@use './../../../scss/variables.scss' as *;
+
+.basket:hover {
+	color: $hover-color;
+};
