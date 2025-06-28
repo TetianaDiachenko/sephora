@@ -12,11 +12,17 @@ header {
 	@media (min-width: $container-width) {
 		height: 96px;
 	}
+	.wrapper {
+		@include wrapper;	
+		display: flex;
+		align-items: center;
+		justify-content: space-between; 
+	};
+
+	.left {
+		padding-left: 13px;
+	}
 };
 
-.wrapper {
-	@include wrapper;	
-	display: flex;
-	align-items: center;
-	justify-content: space-between; 
-};
+
+
