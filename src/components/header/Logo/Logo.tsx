@@ -3,9 +3,11 @@ import logo from './../../../assets/images/logo/logo_sephora.png';
 
 const Logo = () => {
 	return (
-		<a href="/" className={styles.logo}>
-			<img src={logo} alt="Sephora logo" />
-		</a>
+		<div className={styles.logo}>
+			<a href="/">
+				<img src={logo} alt="Sephora logo" />
+			</a>
+		</div>
 	);
 };
 
