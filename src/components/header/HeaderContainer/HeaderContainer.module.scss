@@ -21,6 +21,12 @@ header {
 
 	.left {
 		padding-left: 13px;
+		width: 80%;		
+	}
+
+	.left, .right {
+		display: flex;
+		align-items: center;
 	}
 };
 
