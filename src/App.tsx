@@ -1,7 +1,12 @@
-import './App.scss'
+import './App.scss';
+import HeaderContainer from './components/header/HeaderContainer/HeaderContainer'
 
 const App = () => {
-	return <><h1>Hello</h1></>
+	return (
+		<>
+			<HeaderContainer />
+		</>
+	);
  };
 
 
