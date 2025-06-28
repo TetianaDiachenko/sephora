@@ -8,10 +8,16 @@ header {
 	align-items: center;
 	box-shadow: 0 2px 30px 4px rgba(0, 0, 0, 0.1);
 	background: #fff;
+	padding: 0px 20px 0 13px;
 
 	@media (min-width: $container-width) {
 		height: 96px;
 	}
+
+	@media (min-width: 1120px) {
+		padding: 0;
+	}
+
 	.wrapper {
 		@include wrapper;	
 		display: flex;
@@ -19,14 +25,12 @@ header {
 		justify-content: space-between; 
 	};
 
-	.left {
-		padding-left: 13px;
-		// width: 80%;		
-	}
-
 	.left, .right {
 		display: flex;
 		align-items: center;
+	}
+	.right {
+		gap: 15px;
 	}
 };
 

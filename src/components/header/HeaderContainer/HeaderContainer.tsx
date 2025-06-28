@@ -2,6 +2,8 @@ import styles from './HeaderContainer.module.scss';
 import Logo from '../Logo/Logo';
 import Search from '../Search/Search';
 import MenuContainer from '../Menu/MenuContainer/MenuContainer';
+import Like from '../Like/Like';
+import Basket from '../Basket/Basket';
 
 const HeaderContainer = () => {
 	return (
@@ -12,8 +14,9 @@ const HeaderContainer = () => {
 					<Search />
 					<MenuContainer />
 				</div>
-				<div className="right">
-					
+				<div className={styles.right}>
+					<Like />	
+					<Basket />
 				</div>
 			</div>
 		</header>
