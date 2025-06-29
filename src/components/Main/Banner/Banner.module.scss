@@ -1,0 +1,23 @@
+@use './../../../scss/variables.scss' as *;
+
+.banner {
+	width: 100%;
+	height: 113px; 
+	overflow: hidden;
+ 
+	picture, img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  display: block;
+	}
+ 
+	@media (min-width: 768px) {
+		height: 312px;
+	 }
+
+	@media (min-width: $container-width) {
+	  height: 412px;
+	  max-width: $max-width;
+	}
+ }
