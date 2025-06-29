@@ -1,0 +1,19 @@
+@use './../../../scss/variables.scss' as *;
+
+.result {
+	@include wrapper;
+	font-size: 22px;
+
+	.title {
+		font-size: 32px;
+		font-weight: $font-bold;	
+		margin: 50px 0 24px;
+	}
+	.list {
+		font-size: 22px;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
+}
