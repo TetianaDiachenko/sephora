@@ -1,11 +1,16 @@
 @use './../../../scss/variables.scss' as *;
 
 .card {
-	@include wrapper;
 	background-color: #fafafa;
 	border-radius: 28px;
 	padding: 27px 34px;
 	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+	margin: 0 20px;
+
+	@media (min-width: 1120px) {
+		@include wrapper;
+	 }
+
  }
  
  .step {
