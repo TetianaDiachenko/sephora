@@ -1,0 +1,24 @@
+@use './../../../scss/variables.scss' as *;
+
+.card {
+	@include wrapper;
+	background-color: #fafafa;
+	border-radius: 28px;
+	padding: 27px 34px;
+	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+ }
+ 
+ .step {
+	font-weight: $font-semibold;
+	margin-bottom: 12px;
+ }
+ 
+ .question {
+	margin-bottom: 25px;
+ }
+ 
+ .answers {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+ }
