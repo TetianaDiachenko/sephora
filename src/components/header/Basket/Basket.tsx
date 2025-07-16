@@ -4,7 +4,7 @@ import Bin from '../../svg-components/Bin';
 const Basket = () => {
 	return (
 		<div className={styles.basket}>
-			<a href="/">
+			<a href="#">
 				<Bin />
 			</a>
 		</div>

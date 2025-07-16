@@ -4,7 +4,7 @@ import Heart from './../../svg-components/Heart';
 const Like = () => {
 	return (
 		<div className={styles.like}>
-			<a href="/">
+			<a href="#">
 				<Heart />
 			</a>
 		</div>
