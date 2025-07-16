@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
 import type { QuizState, QuizAction } from './quizReducer';
 
-type QuizContextType {
+type QuizContextType = {
   state: QuizState;
   dispatch: React.Dispatch<QuizAction>;
 }

@@ -1,6 +1,6 @@
 export type Answer = string;
 
-export type QuizState {
+export type QuizState = {
   step: number;
   answers: Answer[];
   isFinished: boolean;
