@@ -1,6 +1,6 @@
 export type Answer = string;
 
-export interface QuizState {
+export type QuizState {
   step: number;
   answers: Answer[];
   isFinished: boolean;
