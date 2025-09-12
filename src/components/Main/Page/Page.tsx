@@ -4,15 +4,16 @@ import Result from '../Result/Result';
 import Intro from '../Intro/Intro';
 import { useQuiz } from '../../../context/quizContext';
 import questions from '../../../data/questions';
+import { useCallback } from 'react';
 
 const Page = () => {
   const { state, dispatch } = useQuiz();
   const { step, isFinished } = state;
 
-  const handleAnswer = (answer: string) => {
+  const handleAnswer = useCallback ((answer: string) => {
     dispatch({ type: 'ANSWER', payload: answer });
     dispatch({ type: 'NEXT_STEP' });
-  };
+  }, [dispatch] );
 
   const question = questions[step];
 
