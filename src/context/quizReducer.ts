@@ -7,8 +7,7 @@ export type QuizState = {
 };
 
 export type QuizAction =
-  | { type: 'ANSWER'; payload: Answer }
-  | { type: 'NEXT_STEP' }
+  | { type: 'NEXT_STEP'; payload: Answer } // combined the answers and the next step
   | { type: 'RESET' };
 
 export const initialQuizState: QuizState = {
@@ -19,17 +18,13 @@ export const initialQuizState: QuizState = {
 
 export function quizReducer(state: QuizState, action: QuizAction): QuizState {
   switch (action.type) {
-    case 'ANSWER':
-      return {
-        ...state,
-        answers: [...state.answers, action.payload],
-      };
     case 'NEXT_STEP':
       const isLast = state.step >= 2;
       return {
         ...state,
         step: state.step + 1,
         isFinished: isLast,
+        answers: [...state.answers, action.payload], // combined the answers and the next step
       };
     case 'RESET':
       return initialQuizState;

@@ -18,7 +18,7 @@ const StepCard = ({
   onAnswer,
 }: StepCardProps) => {
   const [isVisible, setIsVisible] = useState(false); // added animation: smooth appearance of the questions
-  
+
   useEffect(() => {
     setIsVisible(false);
     const timer = setTimeout(() => setIsVisible(true), 400);

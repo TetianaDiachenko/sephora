@@ -12,8 +12,7 @@ const Page = () => {
 
   const handleAnswer = useCallback(
     (answer: string) => {
-      dispatch({ type: 'ANSWER', payload: answer });
-      dispatch({ type: 'NEXT_STEP' });
+      dispatch({ type: 'NEXT_STEP', payload: answer });
     },
     [dispatch]
   );
