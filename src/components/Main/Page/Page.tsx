@@ -10,10 +10,13 @@ const Page = () => {
   const { state, dispatch } = useQuiz();
   const { step, isFinished } = state;
 
-  const handleAnswer = useCallback ((answer: string) => {
-    dispatch({ type: 'ANSWER', payload: answer });
-    dispatch({ type: 'NEXT_STEP' });
-  }, [dispatch] );
+  const handleAnswer = useCallback(
+    (answer: string) => {
+      dispatch({ type: 'ANSWER', payload: answer });
+      dispatch({ type: 'NEXT_STEP' });
+    },
+    [dispatch]
+  );
 
   const question = questions[step];
 

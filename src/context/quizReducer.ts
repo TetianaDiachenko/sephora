@@ -4,7 +4,7 @@ export type QuizState = {
   step: number;
   answers: Answer[];
   isFinished: boolean;
-}
+};
 
 export type QuizAction =
   | { type: 'ANSWER'; payload: Answer }
@@ -25,7 +25,7 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
         answers: [...state.answers, action.payload],
       };
     case 'NEXT_STEP':
-      const isLast = state.step >= 2; 
+      const isLast = state.step >= 2;
       return {
         ...state,
         step: state.step + 1,

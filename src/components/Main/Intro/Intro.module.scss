@@ -1,46 +1,46 @@
 @use './../../../scss/variables.scss' as *;
 
 .intro {
-  @include wrapper;   
-  margin-top: 50px;
-  margin-bottom: 25px;
+	@include wrapper;
+	margin-top: 50px;
+	margin-bottom: 25px;
 
-  .title, 
-  .description,
-  .extraText,
-  .extraText1 {
-    margin: 0px 20px 0px;
+	.title,
+	.description,
+	.extraText,
+	.extraText1 {
+		margin: 0px 20px 0px;
 
-	 @media (min-width: 1120px) {
-		margin: 0;
-	 }
-  }
-
-  .title {
-    font-size: 32px;
-    font-weight: $font-bold; 
+		@media (min-width: 1120px) {
+			margin: 0;
+		}
 	}
 
-  .description {
-    line-height: 1.5;
-    margin: 25px ;
-  }
+	.title {
+		font-size: 32px;
+		font-weight: $font-bold;
+	}
 
-  .extraText,
-  .extraText1 {
-    margin-top: 15px;
-  }
+	.description {
+		line-height: 1.5;
+		margin: 25px;
+	}
 
-  .title, 
-  .description,
-  .extraText,
-  .extraText1 {
-    margin-left: 20px;
-	 margin-right: 20px;
+	.extraText,
+	.extraText1 {
+		margin-top: 15px;
+	}
 
-	 @media (min-width: 1120px) {
-		margin-left: 0px;
-		margin-right: 0px;
-	 }
-  }
+	.title,
+	.description,
+	.extraText,
+	.extraText1 {
+		margin-left: 20px;
+		margin-right: 20px;
+
+		@media (min-width: 1120px) {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
 }

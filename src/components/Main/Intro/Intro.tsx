@@ -10,16 +10,17 @@ const Intro = () => {
     <div className={styles.intro}>
       <h1 className={styles.title}>Congratulations!</h1>
       <p className={styles.description}>
-        The "Mysterious Sephora Box" contest has started.
-        You have been selected to try new products from well-known brands.
-        For only 65 MXN, you will receive a box full of products that will
-        soon be available in Sephora stores. Limit: one box per customer.
+        The "Mysterious Sephora Box" contest has started. You have been selected
+        to try new products from well-known brands. For only 65 MXN, you will
+        receive a box full of products that will soon be available in Sephora
+        stores. Limit: one box per customer.
       </p>
 
-		{step < 4 && <Banner />}
+      {step < 4 && <Banner />}
 
       <p className={styles.extraText}>
-        To receive your Sephora Box, complete the form to confirm that you are a real person.
+        To receive your Sephora Box, complete the form to confirm that you are a
+        real person.
       </p>
       <p className={styles.extraText1}>
         Hurry up, the number of prizes is limited!

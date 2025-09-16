@@ -10,16 +10,23 @@ type StepCardProps = {
   onAnswer: (answer: string) => void;
 };
 
-const StepCard = ({ step, total, question, answers, onAnswer }: StepCardProps) => {
-
+const StepCard = ({
+  step,
+  total,
+  question,
+  answers,
+  onAnswer,
+}: StepCardProps) => {
   const handlClick = useCallback(
-	(answer: string) => () => onAnswer(answer),
-	[onAnswer]
+    (answer: string) => () => onAnswer(answer),
+    [onAnswer]
   );
 
   return (
     <div className={styles.card}>
-      <p className={styles.step}>Question {step} of {total}</p>
+      <p className={styles.step}>
+        Question {step} of {total}
+      </p>
       <h2 className={styles.question}>{question}</h2>
       <div className={styles.answers}>
         {answers.map((answer, index) => (

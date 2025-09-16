@@ -4,11 +4,11 @@
 	width: 109px;
 	height: 31px;
 	transition: transform 0.3s;
-	
+
 	&:hover {
 		transform: scale(1.05);
 	}
-	
+
 	@media (min-width: $container-width) {
 		width: 194px;
 		height: 55px;

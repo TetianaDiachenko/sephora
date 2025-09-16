@@ -19,20 +19,19 @@ header {
 	}
 
 	.wrapper {
-		@include wrapper;	
+		@include wrapper;
 		display: flex;
 		align-items: center;
-		justify-content: space-between; 
-	};
+		justify-content: space-between;
+	}
 
-	.left, .right {
+	.left,
+	.right {
 		display: flex;
 		align-items: center;
 	}
+
 	.right {
 		gap: 15px;
 	}
-};
-
-
-
+}

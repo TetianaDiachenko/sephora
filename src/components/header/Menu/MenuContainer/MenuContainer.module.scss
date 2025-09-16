@@ -2,6 +2,7 @@
 
 .menu {
 	display: none;
+
 	@media (min-width: $container-width) {
 		display: flex;
 		align-items: center;
@@ -9,5 +10,5 @@
 		list-style: none;
 		gap: 23px;
 		padding: 0;
-	};
-};
+	}
+}

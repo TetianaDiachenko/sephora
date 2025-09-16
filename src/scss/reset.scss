@@ -1,72 +1,85 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
 }
 
 p {
-  margin: 0;
+	margin: 0;
 }
 
-ul, ol {
-  list-style: none;
+ul,
+ol {
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 
-th, td {
-  padding: 0;
-  border: none;
+th,
+td {
+	padding: 0;
+	border: none;
 }
 
 button {
-  background: none;
-  border: none;
-  padding: 0;
-  font: inherit;
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
 }
 
-input, select, textarea, button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+input,
+select,
+textarea,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
 
-input[type='checkbox'], input[type='radio'] {
-  display: inline-block;
-  width: auto;
-  height: auto;
+input[type='checkbox'],
+input[type='radio'] {
+	display: inline-block;
+	width: auto;
+	height: auto;
 }
 
-input, textarea {
-  outline: none;
+input,
+textarea {
+	outline: none;
 }
 
-a, button {
+a,
+button {
 	cursor: pointer;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 :focus {
-  outline: none;
+	outline: none;
 }

@@ -8,26 +8,31 @@ type MenuItemProps = {
   onClick?: () => void;
 };
 
-const MenuItem: React.FC<MenuItemProps> = ({ Icon, text, subtext, onClick }) => {
-	const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-		e.preventDefault(); 
-		onClick?.(); 
-	 };
-	return (
+const MenuItem: React.FC<MenuItemProps> = ({
+  Icon,
+  text,
+  subtext,
+  onClick,
+}) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    onClick?.();
+  };
+  return (
     <li>
-		<a href="#" onClick={handleClick} className={styles.menuItem}>
-			<Icon className={styles.icon} />
-			<span className={styles.text}>
-				{text}
-				{subtext && (
-					<>
-						<br />
-						<span className={styles.subtext}>{subtext}</span>
-					</>
-				)}
-			</span> 
-		</a>		
-    </li>	
+      <a href="#" onClick={handleClick} className={styles.menuItem}>
+        <Icon className={styles.icon} />
+        <span className={styles.text}>
+          {text}
+          {subtext && (
+            <>
+              <br />
+              <span className={styles.subtext}>{subtext}</span>
+            </>
+          )}
+        </span>
+      </a>
+    </li>
   );
 };
 

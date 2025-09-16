@@ -8,22 +8,22 @@
 
 	@media (min-width: 1120px) {
 		@include wrapper;
-	 }
+	}
 
- }
- 
- .step {
+}
+
+.step {
 	font-weight: $font-semibold;
 	margin-bottom: 12px;
- }
- 
- .question {
+}
+
+.question {
 	font-size: 18px;
 	margin-bottom: 25px;
- }
- 
- .answers {
+}
+
+.answers {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
- }
+}

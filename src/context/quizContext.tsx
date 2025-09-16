@@ -4,7 +4,7 @@ import type { QuizState, QuizAction } from './quizReducer';
 type QuizContextType = {
   state: QuizState;
   dispatch: React.Dispatch<QuizAction>;
-}
+};
 
 export const QuizContext = createContext<QuizContextType | null>(null);
 
